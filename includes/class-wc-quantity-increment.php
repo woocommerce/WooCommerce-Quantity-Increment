@@ -17,10 +17,9 @@ class WooCommerce_Quantity_Increment_Init {
 
     	wp_register_script( 'wcqi-js', plugins_url( 'assets/js/wc-quantity-increment' . $min . '.js', plugin_dir_path( __FILE__ ) ), array( 'jquery' ) );
     	wp_register_style( 'wcqi-css', plugins_url( 'assets/css/wc-quantity-increment.css', plugin_dir_path( __FILE__ ) ) );
-    	wp_register_script( 'number-polyfill', plugins_url( 'assets/js/lib/number-polyfill.min.js', plugin_dir_path( __FILE__ ) ) );
+    	wp_register_script( 'wcqi-number-polyfill', plugins_url( 'assets/js/lib/number-polyfill.min.js', plugin_dir_path( __FILE__ ) ) );
 
     	wp_enqueue_script( 'wcqi-js' );
-    	wp_enqueue_script( 'number-polyfill' );
     	wp_enqueue_style( 'wcqi-css' );
 
     }
