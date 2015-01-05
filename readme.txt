@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WooCommerce Quanity Incremenet re-adds the quantity buttons depreciated in WooCommerce 2.3
+WooCommerce Quantity Increment re-adds the quantity buttons depreciated in WooCommerce 2.3
 
 == Description ==
 
