@@ -20,12 +20,12 @@ It optionally includes [Number Polyfill](https://github.com/jonstipe/number-poly
 
 To include it, add something like this to your `functions.php`:
 
-```
+`
 add_action( 'wp_enqueue_scripts', 'wcqi_enqueue_polyfill' );
 function wcqi_enqueue_polyfill() {
     wp_enqueue_script( 'wcqi-number-polyfill' );
 }
-```
+`
 
 == Installation ==
 
