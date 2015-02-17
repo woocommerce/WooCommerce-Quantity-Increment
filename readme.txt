@@ -34,6 +34,18 @@ function wcqi_enqueue_polyfill() {
 
 == Frequently Asked Questions ==
 
+= I don’t want to use the plugin styles as it looks bad with my theme =
+
+You can add the following to your `functions.php` file:
+
+`
+add_action( 'wp_enqueue_scripts', 'wcs_dequeue_quantity' );
+function wcs_dequeue_quantity() {
+    wp_dequeue_style( 'wcqi-css' );
+}
+`
+
+This will dequeue the plugin’s stylesheet.
 
 == Screenshots ==
 
