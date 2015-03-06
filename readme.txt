@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WooCommerce Quantity Increment re-adds the quantity buttons depreciated in WooCommerce 2.3
+WooCommerce Quantity Increment re-adds the quantity buttons deprecated in WooCommerce 2.3
 
 == Description ==
 
-In WooCommerce 2.3, the quantity increment buttons have been depreciated, as most browsers now support `<input type="number" />`.
+In WooCommerce 2.3, the quantity increment buttons have been deprecated, as most browsers now support `<input type="number" />`.
 
 However, you may want to keep them. Simply install and activate this plugin to do so.
 
