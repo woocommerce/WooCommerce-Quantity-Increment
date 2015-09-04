@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class WooCommerce_Quantity_Increment_Init {
 
     function __construct() {
- 
+
     	add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 
     }
@@ -22,8 +22,17 @@ class WooCommerce_Quantity_Increment_Init {
     	wp_enqueue_script( 'wcqi-js' );
     	wp_enqueue_style( 'wcqi-css' );
 
+    	add_filter( 'woocommerce_composite_front_end_params', array( $this, 'composite_products_front_end_params' ) );
+
     }
 
+    public function composite_products_front_end_params( $params ) {
+
+    	$params[ 'show_quantity_buttons' ] = 'yes';
+
+    	return $params;
+
+    }
 }
 
 new WooCommerce_Quantity_Increment_Init;
