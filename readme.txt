@@ -46,10 +46,6 @@ function wcs_dequeue_quantity() {
 
 This will dequeue the plugin’s stylesheet.
 
-== Screenshots ==
-
-1. The Quantity Increment buttons
-
 == Changelog ==
 
 = 1.1.0 =
