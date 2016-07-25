@@ -1,24 +1,23 @@
 === Plugin Name ===
-Contributors: woothemes, bryceadams
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal@woothemes.com&item_name=Donation+for+WooCommerce
-Tags: woocommerce, woothemes, quantity, quantity increment, quantity buttons
-Requires at least: 3.6.1
-Tested up to: 4.1
-Stable tag: 1.0.0
+Contributors: automattic, woothemes
+Tags: woocommerce, quantity, quantity increment, quantity buttons, spinner
+Requires at least: 4.1
+Tested up to: 4.5
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WooCommerce Quantity Increment re-adds the quantity buttons deprecated in WooCommerce 2.3
+WooCommerce Quantity Increment adds JavaScript powered quantity buttons to your cart page.
 
 == Description ==
 
-In WooCommerce 2.3, the quantity increment buttons have been deprecated, as most browsers now support `<input type="number" />`.
+WooCommerce uses number inputs for the cart quantities by default, as most browsers now support `<input type="number" />`.
 
-However, you may want to keep them. Simply install and activate this plugin to do so.
+However, you may want to have JavaScript powered inputs if you want greater control over appearance. Simply install and activate this plugin to do so.
 
-It optionally includes [Number Polyfill](https://github.com/jonstipe/number-polyfill), which is a polyfill for implementing the HTML5 `<input type="number">` element in browsers that do not currently support it.
+It optionally includes a [Number Polyfill](https://github.com/jonstipe/number-polyfill), which is a polyfill for implementing the HTML5 `<input type="number">` element in browsers that do not currently support it.
 
-To include it, add something like this to your `functions.php`:
+To include this, add the following code to your theme's `functions.php` file:
 
 `
 add_action( 'wp_enqueue_scripts', 'wcqi_enqueue_polyfill' );
@@ -52,6 +51,9 @@ This will dequeue the plugin’s stylesheet.
 1. The Quantity Increment buttons
 
 == Changelog ==
+
+= 1.1.0 =
+* Updated to work with the WooCommerce 2.6 cart ajax script.
 
 = 1.0 =
 * Initial Release
