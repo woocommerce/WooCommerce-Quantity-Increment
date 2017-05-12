@@ -12,7 +12,7 @@ jQuery( function( $ ) {
 	}
 
 	function wcqi_refresh_quantity_increments(){
-		$( 'div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)' ).addClass( 'buttons_added' ).append( '<input type="button" value="+" class="plus" />' ).prepend( '<input type="button" value="-" class="minus" />' );
+		$( 'div.quantity:not(.buttons_added):not(:has(input:hidden)), td.quantity:not(.buttons_added):not(:has(input:hidden))' ).addClass( 'buttons_added' ).append( '<input type="button" value="+" class="plus" />' ).prepend( '<input type="button" value="-" class="minus" />' );
 	}
 
 	$( document ).on( 'updated_wc_div', function() {
